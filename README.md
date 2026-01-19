@@ -14,8 +14,13 @@ My current program currently runs on Python 3.12 (.venv), what should I do to be
 
 Sources: 
 https://github.com/marcharper/python-ternary/blob/master/README.md
+
 https://docs.python.org/3/library/sys.html#sys.argv
+
 https://docs.python.org/3.4/library/stdtypes.html#str.strip
+
 https://www.geeksforgeeks.org/python/python-list-slicing/
+
 https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
+
 https://stackoverflow.com/questions/57150426/what-is-printf
