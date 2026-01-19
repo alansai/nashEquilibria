@@ -1,8 +1,24 @@
 import random
 
 
+# Author alansai
+'''
+    Represents a Rock Paper Scissors Player for Mod/Sim Fall 2026 Final Project (MBHS)
+    A Player has an id (like "P1"), as well as preferences for 3 strategies (which sum to 1.0).
+    and keeps track of how many numGamesPlayed they've played, plus their tot score and avg score.
+
+    Inspiration drawn from the work done by Dr. Andrew Davison (PSU)
+
+    sample usage: p1 = Player("P1")
+'''
+
+
 class rpsPlayer:
     def __init__(self, id):
+        """
+        Args: id
+        Sets initial values of player object
+        """
         self.id = id
         # rock, paper and scissors all start at 1/3
         self.prefs = [0.333, 0.333, 0.334]
@@ -13,12 +29,24 @@ class rpsPlayer:
         self.history = []
 
     def getId(self):
+        """
+        Args: None
+        Returns: id
+        """
         return self.id
 
     def getPrefs(self):
+        """
+        Args: None
+        Returns: prefs
+        """
         return self.prefs
 
     def getStrategy(self):
+        """
+        Args: None
+        Returns: what strategy is played for
+        """
         r = random.random()
         if r < self.prefs[0]:
             return 0  # rock
@@ -28,11 +56,20 @@ class rpsPlayer:
             return 2  # scissors
 
     def updateScore(self, score):
+        """
+        Args: score
+        Updates total score
+        """
         # updates score after preference
         self.totalScore += score
         self.numGamesPlayed += 1
+        self.averageScore = self.totalScore / self.numGamesPlayed
 
     def updatePrefs(self, strategy_played, score):
+        """
+        Args: strategy_played, score
+        Updates preferences and adds to prefs history
+        """
         # Increase the played strategy, decrease others equally
         for i in range(3):
             if (self.prefs[i] != 1.0 or self.prefs[i] != 0.0):
@@ -57,6 +94,10 @@ class rpsPlayer:
 #        print(new)
 
     def __str__(self):
+        """
+        Args: None
+        Returns: string of preferences
+        """
         a = self.prefs[0]
         b = self.prefs[1]
         c = self.prefs[2]

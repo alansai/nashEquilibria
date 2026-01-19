@@ -16,6 +16,16 @@ README in github
 """
 
 def parse_file(filename):
+    """
+    Parses file from given filename; opens file and parses line by line
+    Args: filename: name of file to parse
+    Returns: title of name of game and a matrix comprising possible values of game
+    Logs information and prints out exactly the same as in instructions:
+    Reading file.txt
+    Building n x n payoff...
+    Labels: ['game', 'strategy1', 'strategy-n-1', 'strategy-n']
+    Payoffs: [insert number tuples here]
+    """
     print("Reading " + filename)
     lines = []
     #opens file, strips out leading whitespace, and ignores comments; puts each line in a list
@@ -50,6 +60,14 @@ def parse_file(filename):
 
 
 def run_2x2(matrix):
+    """
+    Runs 2x2 matrix (pd, bos, stag)
+    Args: matrix: 2x2 matrix
+    Returns: players: created list of players with logged history of preferences
+    Runs game on each player for 2250 rounds using round-robin logic
+    In every game a strategy is picked, outcome is decided, preferences are changed
+    history is then updated to be plotted later
+    """
     players = []
     for i in range(10):
         # Creates and adds player
@@ -58,7 +76,7 @@ def run_2x2(matrix):
         players.append(p)
     # 50 sessions fo 2250 total rounds
     for session in range(50):
-        # everyone plays each other in round robin
+        # everyone plays each other
         for i in range(10):
             for j in range(i + 1, 10):
                 p1 = players[i]
@@ -77,30 +95,40 @@ def run_2x2(matrix):
 
 
 def plot_pd(playerA, playerB):
-        # gets player history and plots to get preference
-        x = playerA.history[::10]
-        x1 = playerA.history2[::10]
-        y = playerB.history[::10]
-        y1 = playerB.history2[::10]
-        # make sizes increase
-        sizes = []
-        for i in range(len(x)):
-            sizes.append(20 * i)
-        plt.figure(figsize = (8, 8))
-        plt.scatter(x, x1, s = sizes, alpha = 0.5, c = 'blue', label = f'{playerA.id}')
-        plt.scatter(y, y1, s = sizes, alpha = 0.5, c = 'yellow', label = f'{playerB.id}')
-        plt.title(f"Convergence in Prisoners Dilemma")
-        plt.xlabel("quiet")
-        plt.ylabel("confess")
-        plt.xlim(-0.05, 0.55)
-        plt.ylim(0.45, 1.05)
-        # adds gridlines
-        plt.grid(True)
-        plt.legend()
-        plt.show()
+    """
+    scatter plots preference histories of two players in prisoners dilemma
+    Args: playerA: first player; playerB: second player
+    Creates matplotlib plot with preference histories of both players plotted to convergence
+    """
+    # gets player history and plots to get preference
+    x = playerA.history[::10]
+    x1 = playerA.history2[::10]
+    y = playerB.history[::10]
+    y1 = playerB.history2[::10]
+    # make sizes increase
+    sizes = []
+    for i in range(len(x)):
+        sizes.append(20 * i)
+    plt.figure(figsize = (8, 8))
+    plt.scatter(x, x1, s = sizes, alpha = 0.5, c = 'blue', label = f'{playerA.id}')
+    plt.scatter(y, y1, s = sizes, alpha = 0.5, c = 'yellow', label = f'{playerB.id}')
+    plt.title(f"Prisoners Dilemma")
+    plt.xlabel("quiet")
+    plt.ylabel("confess")
+    plt.xlim(-0.05, 0.55)
+    plt.ylim(0.45, 1.05)
+    # adds gridlines
+    plt.grid(True)
+    plt.legend()
+    plt.show()
 
 
 def plot_bos(playerA, playerB):
+    """
+    scatter plots preference histories of two players in battle of the sexes
+    Args: playerA: first player; playerB: second player
+    Creates matplotlib plot with preference histories of both players plotted to convergence
+    """
     # gets player history and plots to get preference
     x = playerA.history[::10]
     x1 = playerA.history2[::10]
@@ -113,7 +141,7 @@ def plot_bos(playerA, playerB):
     plt.figure(figsize=(8, 8))
     plt.scatter(x, x1, s = sizes, alpha = 0.5, c = 'purple', label = f'{playerA.id}')
     plt.scatter(y, y1, s = sizes, alpha = 0.3, c = 'blue', label = f'{playerB.id}')
-    plt.title(f"Convergence in Battle of Sexes")
+    plt.title(f"Battle of Sexes")
     plt.xlabel("opera")
     plt.ylabel("football")
     plt.xlim(-0.05, 1.05)
@@ -125,6 +153,11 @@ def plot_bos(playerA, playerB):
 
 
 def plot_stag(playerA, playerB):
+    """
+    scatter plots preference histories of two players in stag and hunt game
+    Args: playerA: first player; playerB: second player
+    Creates matplotlib plot with preference histories of both players plotted to convergence
+    """
     # gets player history and plots to get preference
     x = playerA.history[::10]
     x1 = playerA.history2[::10]
@@ -137,7 +170,7 @@ def plot_stag(playerA, playerB):
     plt.figure(figsize = (8, 8))
     plt.scatter(x, x1, s = sizes, alpha = 0.5, c = 'pink', label = f'{playerA.id}')
     plt.scatter(y, y1, s = sizes, alpha = 0.3, c = 'green', label = f'{playerB.id}')
-    plt.title(f"Convergence in Stag Hunt")
+    plt.title(f"Stag and Hunt Game")
     plt.xlabel("stag")
     plt.ylabel("hunt")
     plt.xlim(-0.05, 1.05)
@@ -149,6 +182,13 @@ def plot_stag(playerA, playerB):
 
 #---------------------------------------------------
 def run_rps(matrix):
+    """
+    Runs 3x3 rps matrix
+    Args: matrix: rps matrix
+    Returns: players: created list of players with logged history of preferences
+    Similar logic to run2x2 but applies to rps now
+    Does not do round-robin but can be modified to do so by changing the 2s to n-s
+    """
     players = []
     for i in range(2):
         # Creates and adds player
@@ -170,6 +210,11 @@ def run_rps(matrix):
 
 
 def plot_rps(playerA, playerB):
+    """
+    scatter plots preference histories of two players in rock paper scissors
+    Args: playerA: first player; playerB: second player
+    Creates triangle matplotlib plot using ternary with preference histories of both players plotted to show patterns
+    """
     ##Boundary and Gridlines
     scale = 1.0
     figure, tax = (ternary.figure (scale = scale))
@@ -190,6 +235,10 @@ def plot_rps(playerA, playerB):
 
 
 def main():
+    """
+    Runs the code, allows it to be run from local terminal
+    calls other methods to plot
+    """
     if len(sys.argv) < 2:
         print("Works; use command line and run: python nashEq.py + filename.txt")
         return
