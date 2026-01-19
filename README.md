@@ -4,6 +4,7 @@
 ModSim Final Project: Nash Equilibria through Simulation
 
 Author		Alan Sai
+
 Date 		19 Jan 2026
 
 This module contains the simulation code that facilitates runs of multiple classic game theory games (Prisoner's dilemma, Battle of the Sexes, Stag and Hare, and Rock, Paper, Scissors).  The program will generate a matplotlib file (using ternary if rps) illustrating the results of the simulations.  The program is run through the local terminal.
