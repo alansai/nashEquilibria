@@ -13,6 +13,7 @@ How to install python ternary through the correct virtual enviornment?
 My current program currently runs on Python 3.12 (.venv), what should I do to be able to import python ternary without running into problems?
 
 Sources: 
+
 https://github.com/marcharper/python-ternary/blob/master/README.md
 
 https://docs.python.org/3/library/sys.html#sys.argv
