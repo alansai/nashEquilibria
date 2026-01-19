@@ -1,7 +1,7 @@
 # nashEquilibria
 
 
-"""ModSim Final Project: Nash Equilibria through Simulation
+ModSim Final Project: Nash Equilibria through Simulation
 
 Author		Alan Sai
 Date 		19 Jan 2026
