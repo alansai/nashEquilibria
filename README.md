@@ -15,9 +15,9 @@ How to install python ternary through the correct virtual environment?
 
 My current program currently runs on Python 3.12 (.venv), what should I do to be able to import python ternary without running into problems?
 
-<img width="184" height="183" alt="image" src="https://github.com/user-attachments/assets/98e7716a-e5f9-4968-88ee-54913381f406" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/98e7716a-e5f9-4968-88ee-54913381f406" />
 
-<img width="1805" height="1917" alt="image" src="https://github.com/user-attachments/assets/c043fdf5-e9b8-44bc-8e2c-c5fa4ae59787" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c043fdf5-e9b8-44bc-8e2c-c5fa4ae59787" />
 
 <img width="1747" height="1775" alt="image" src="https://github.com/user-attachments/assets/b5d6c8f0-c381-4562-81c2-7a0307f70b48" />
 
