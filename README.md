@@ -23,7 +23,7 @@ My current program currently runs on Python 3.12 (.venv), what should I do to be
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/90bb8a09-e7e9-40a1-b3ec-342c4593c08b" />
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5225ff8e-0ee2-4edc-84af-6d5993cce7dc" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7747794c-2bb3-4de0-8fea-7b2e0f7b1aa0" />
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dce2ef05-eb92-4ecd-826e-9cab268ebb0e" />
 
