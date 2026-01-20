@@ -19,13 +19,13 @@ My current program currently runs on Python 3.12 (.venv), what should I do to be
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c043fdf5-e9b8-44bc-8e2c-c5fa4ae59787" />
 
-<img width="1747" height="1775" alt="image" src="https://github.com/user-attachments/assets/b5d6c8f0-c381-4562-81c2-7a0307f70b48" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b5d6c8f0-c381-4562-81c2-7a0307f70b48" />
 
-<img width="1742" height="1767" alt="image" src="https://github.com/user-attachments/assets/90bb8a09-e7e9-40a1-b3ec-342c4593c08b" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/90bb8a09-e7e9-40a1-b3ec-342c4593c08b" />
 
-<img width="1792" height="1775" alt="image" src="https://github.com/user-attachments/assets/5225ff8e-0ee2-4edc-84af-6d5993cce7dc" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5225ff8e-0ee2-4edc-84af-6d5993cce7dc" />
 
-<img width="1795" height="1790" alt="image" src="https://github.com/user-attachments/assets/dce2ef05-eb92-4ecd-826e-9cab268ebb0e" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dce2ef05-eb92-4ecd-826e-9cab268ebb0e" />
 
 <img width="1525" height="1150" alt="image" src="https://github.com/user-attachments/assets/331a51ff-ee96-4163-a9f5-2294e2f55272" />
 
