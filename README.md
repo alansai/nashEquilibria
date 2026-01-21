@@ -43,7 +43,10 @@ https://stackoverflow.com/questions/57150426/what-is-printf
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/dce2ef05-eb92-4ecd-826e-9cab268ebb0e" />
 
-<img width="1525" height="1150" alt="image" src="https://github.com/user-attachments/assets/331a51ff-ee96-4163-a9f5-2294e2f55272" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/331a51ff-ee96-4163-a9f5-2294e2f55272" />
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5cdbdad8-9018-4fb2-bfac-25eb4c12b66e" />
+
 
 
 
